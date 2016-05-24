@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:id="@+id/main_menu_refresh"
+          android:title="@string/Refresh"
+          android:icon="@drawable/ic_action_refresh"
+          android:showAsAction="ifRoom"/>
+     <item android:id="@+id/main_menu_addSubcription"
+         android:title="@string/AddSubscription"
+         android:showAsAction="ifRoom"
+         android:icon="@drawable/ic_action_new"/>
+    
+
+</menu>

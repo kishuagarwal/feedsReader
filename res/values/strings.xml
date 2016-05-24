@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">feedsReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="save">Save</string>
+    <string name="markRead">Mark Read</string>
+    <string name="unmarkRead">Unmark Read</string>
+    <string name="unloadedImages">Download</string>
+    <string name="searchButtonText">Search</string>
+    <string name="searchHint">Enter your search query</string>
+    <string name="Refresh">Refresh</string>
+    <string name="AddSubscription">Add Subscription</string>
+
+</resources>

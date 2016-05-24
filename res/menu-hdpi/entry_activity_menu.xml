@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/Star"
+        android:title="@string/save"
+        android:icon="@drawable/ic_action_not_important"
+        android:showAsAction="ifRoom"></item>
+    
+    <item android:id="@+id/readMarker"
+        android:title="@string/markRead"
+        android:icon="@drawable/ic_action_stop"
+        android:showAsAction="always"
+        />
+    
+    
+
+</menu>
