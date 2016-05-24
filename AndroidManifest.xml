@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kishu.feedsreader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.kishu.feedsreader.FeedApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.kishu.feedsreader.view.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kishu.feedsreader.view.OAuthWebViewActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.kishu.feedsreader.view.FeedListFragment"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="com.kishu.feedsreader.view.EntryActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+          
+        </activity>
+        <activity
+            android:name="com.kishu.feedsreader.view.SubscriptionsSearch"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+
+        <activity 
+            android:name="com.kishu.feedsreader.view.SubscriptionPreviewActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+            
+        </activity>
+        <service android:name="com.kishu.feedsreader.UpdateService" >
+        </service>
+    </application>
+
+</manifest>

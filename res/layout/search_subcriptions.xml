@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+	        android:layout_weight="0.75"
+	        android:layout_margin="4dp"
+            android:hint="@string/searchHint" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:onClick="onSearchButtonClicked"
+            android:text="@string/searchButtonText" />
+
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ProgressBar android:layout_width="wrap_content"
+        android:id="@+id/progressIndicator"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    
+    <ListView
+        android:id="@+id/searchResultListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:dividerHeight="4dp" />
+        
+    </FrameLayout>
+    
+</LinearLayout>
